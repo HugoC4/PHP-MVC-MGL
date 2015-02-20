@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+
+## This 'ere code thingy be a test. Possible remove this la'er.
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -l
+RewriteRule ^ - [L]
+
+## Rename these params if you must, see if IGAF.
+RewriteRule ^([^/]+)/?$ ?controller=$1 [L,QSA]
+RewriteRule ^([^/]+)/([^/]+)/?$ ?controller=$1&action=$2 [L,QSA]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/?$ ?controller=$1&action=$2&param=$3 [L,QSA]
+## RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/?$ ?controller=$1&action=$2&param=$3&param2=$4 [L,QSA]
+
+</IfModule>
