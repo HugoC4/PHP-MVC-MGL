@@ -1,0 +1,7 @@
+<?php
+
+DEFINE("DATABASE_HOST", "localhost");
+DEFINE("DATABASE_PORT", "3307");
+DEFINE("DATABASE_USER", "root");
+DEFINE("DATABASE_PASS", "usbw");
+DEFINE("DATABASE_DBNAME", "dbname");

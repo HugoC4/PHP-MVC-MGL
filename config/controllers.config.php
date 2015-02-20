@@ -1,0 +1,6 @@
+<?php
+
+DEFINE("CONTROLLER_DEFAULT", "controller");
+DEFINE("ACTION_DEFAULT", "3307");
+
+DEFINE("ACTION_HOME_DEFAULT", "root");
