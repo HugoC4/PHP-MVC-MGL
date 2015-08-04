@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 require_once 'libs/Smarty.class.php';
@@ -36,3 +37,6 @@ if(file_exists('controllers/' . $sController . '.php')) {
 function Concat($sString1, $sString2) {
     return $sString1 . $sString2;
 }
+=======
+<?php echo 'I am lorde.'; ?>
+>>>>>>> 3fe3d0b37bf70be1c55e3d6391f663020c1c8928

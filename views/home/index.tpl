@@ -1,1 +1,1 @@
-{include '../base.tpl'}
+{extends '../base.tpl'}
